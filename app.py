@@ -31,7 +31,7 @@ with st.form("company_info", clear_on_submit=True):
     
     competitors_url = st.text_input("**Competitors URL** (ex. www.apple.com):")
     
-    value_proposition = st.text_input(
+    value_proposition = st.text_area(
         "**Value Proposition** (A sentence summarizing the product’s value):"
     )
     
@@ -72,26 +72,12 @@ with st.form("company_info", clear_on_submit=True):
             2.  The competitora presence and relationship with the company.
             3.  Key market trends and customer needs.leadership information and thier roles in both the company and the competitor
             4.  Any product insights from public document or reports that show the competitive advantage of the company over the competitor
-            5. Any productAny refernces .links to articles, press releases or other source used to support analysis
+            5.  Relevant leaders and thair roles.
+            6.  Pros and cons of launching the product into a new market.
+            7.  Any productAny refernces .links to articles, press releases or other source used to support analysis
             
-            Example Output:
-
-            "The UltraFit Smartwatch is designed to be your ideal companion for both fitness tracking and daily wear. Compared to the FitTech 
-            ProWatch, the UltraFit stands out with: 
-                
-                Battery Life: UltraFit offers an impressive 10-day battery life on a single charge, while the ProWatch only lasts 5 days. 
-                This means less time charging and more time tracking your activities.
-                
-                Advanced Health Monitoring: UltraFit includes continuous heart rate monitoring, blood oxygen levels, and sleep tracking, with real-time feedback. While ProWatch offers similar features, it lacks real-time analysis and detailed sleep insights.
-
-                Durability: Our smartwatch is built with military-grade toughness, making it water-resistant up to 50 meters, whereas the ProWatch is only splash-proof.
-
-                Price-Value Ratio: UltraFit delivers these premium features at a more competitive price point, giving you more value for your investment.
-
-            You can find more details and see user reviews here: www.ultrafit.com.
-
-            Choosing the UltraFit Smartwatch means better performance, longer battery life, and 
-            reliable health insights to meet your fitness and lifestyle needs."
+            Based on the report, create a marketing email template to target_customer.  Emphasize the benefits of the product and the company's strengths. 
+            Include optional information if provided.
             """
 
             # Prompt Template
